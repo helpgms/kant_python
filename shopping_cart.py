@@ -48,3 +48,4 @@ cart.remove_product(product_b)
 # 장바구니 담긴 최종 상품 목록 조희
 for product in cart.show_products():
     print([product.name, product.price])
+
