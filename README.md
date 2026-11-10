@@ -21,39 +21,39 @@
 ### 결과 화면 
 - 1번을 누를 때.
 
-![1번을 눌렀을 때](../kant_study/../frist-project/images/list.png)
+![1번을 눌렀을 때](./images/list.png)
 
 - 2번
 
-![2번 눌렀을 때](../kant_study/../frist-project/images/add.png)
+![2번 눌렀을 때](./images/add.png)
 
 - 3번
 
-![3번 눌렀을 때](../kant_study/../frist-project/images/remove.png)
+![3번 눌렀을 때](./images/remove.png)
 
 - 4번
 
-![4번 눌렀을 때](../kant_study/../frist-project/images/showCart.png)
+![4번 눌렀을 때](./images/showCart.png)
 
 쿠폰 적용
 
-![쿠폰 적용 계산](../kant_study/../frist-project/images/showCartCoupon.png)
+![쿠폰 적용 계산](./images/showCartCoupon.png)
 
 - 5번
 
-![5번 눌렀을 때](../kant_study/../frist-project/images/coupon.png)
+![5번 눌렀을 때](./images/coupon.png)
 
 - 6번
 
-![6번 눌렀을때](../kant_study/../frist-project/images/payment.png)
+![6번 눌렀을때](./images/payment.png)
 
 결제 후 재고 수량 감소
 
-![결제 후 재고 수량 감소](../kant_study/../frist-project/images/res.png)
+![결제 후 재고 수량 감소](./images/res.png)
 
 - q
 
-![q 눌렀을 때](../kant_study/../frist-project/images/fin.png)
+![q 눌렀을 때](./images/fin.png)
 
 ### 중간에 확인된 문제점 
 
