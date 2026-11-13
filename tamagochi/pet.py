@@ -100,3 +100,7 @@ if __name__ == "__main__":
 
     print("pet.py 의 __name__:", __name__)
     print(choco)
+
+
+    # 리눅스 환경 세팅(CMD)
+    # $ wsl --install

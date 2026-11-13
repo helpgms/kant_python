@@ -19,13 +19,15 @@ class Product:
 
     
 
-# ------------  code test  ----------------
-products = [
-    Product("무선 이어폰", 80_000, 3),
-    Product("텀블러", 15_000, 10),
-    Product("보조배터리", 32_000, 5),
-    Product("마우스 패드", 9_000, 0),
-    Product("USB 허브", 18_000, 10)
-]
+# ------------  test code  ----------------
+# 이 파일을 직접 실행 시켰을 때만 코드가 실행되오록 하는 로직
+if __name__ == "__main__":
+    products = [
+        Product("무선 이어폰", 80_000, 3),
+        Product("텀블러", 15_000, 10),
+        Product("보조배터리", 32_000, 5),
+        Product("마우스 패드", 9_000, 0),
+        Product("USB 허브", 18_000, 10)
+    ]
 
-for p in products: print(p)
+    for p in products: print(p)
