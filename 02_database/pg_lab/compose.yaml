@@ -1,0 +1,14 @@
+services:                 # 실행할 컨테이너(서비스) 목록 — 필수
+  db:              # 예: db, web (직접 정하는 이름)
+    image: postgres:18      # 사용할 이미지
+    container_name: kant-pg   # 컨테이너 이름 (생략 시 자동 생성)
+    environment:           # 환경 변수 (-e)
+      POSTGRES_PASSWORD: 1234
+    ports:                 # 포트 연결 (-p) — 문자열로 감싸는 것을 권장
+      - "5433:5432"
+    volumes:               # 볼륨 연결 (-v)
+      - pgdata:/var/lib/postgresql
+
+volumes:                  # 사용할 볼륨 선언 (최상위)
+  pgdata:
+    external: true
