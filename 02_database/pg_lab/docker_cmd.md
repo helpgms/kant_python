@@ -59,7 +59,9 @@ docker run -d --name my-pg -e POSTGRES_PASSWORD=1234 -p 5432:5432 -v pgdata:/var
 ```sh
 docker exec -it my-pg psql -U postgres -d kant_shop -c "SELECT * FROM product"
 ```
-
+```sh
+- 어떤 컨테이너에도 쓰지 않는 익명 볼륨 정리: docker volume prune
+```
 ---
 
 ### compose 하는 방법

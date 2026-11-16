@@ -1,0 +1,58 @@
+CREATE TABLE items
+(
+    item_id         SERIAL       PRIMARY KEY,
+    item_name       VARCHAR(30)  NOT NULL,
+    item_price      INT          NOT NULL,  
+    item_stock      INT          NOT NULL,
+    item_category   VARCHAR(30)  NOT NULL  REFERENCES categories(category_name),
+    item_ex         VARCHAR(100)
+);
+# 가격이 0이하면?
+# 수량이 0이하면?
+
+CREATE TABLE categories
+(
+    category_id     SERIAL          PRIMARY KEY,
+    category_name   VARCHAR(30)     NOT NULL    UNIQUE,
+    category_ex     VARCHAR(100)
+);
+
+CREATE TABLE itemcart
+(
+    itemcart_id     SERIAL      PRIMARY KEY,
+    user_id         INT         NOT NULL,
+    item_id         INT         NOT NULL    REFERENCES items (item_id),
+    cart_in_amount  INT         NOT NULL, 
+    UNIQUE (user_id,item_id)
+);
+
+# 카트 안에 수량이 0일수도 있지 않나?
+# 유저가 같은 상품을 계속 반복적으로 담으면? 기본키로 해서 1:1로 만들어?
+
+INSERT INTO items
+(
+    item_name,
+    item_price,
+    item_stock,
+    item_category,
+    item_ex
+)
+VALUES ('사탕', 1000, 100, '음식', '디저트 일종');
+
+INSERT INTO categories
+(
+    category_name,
+    category_ex
+)
+VALUES('음식', '간식');
+# items 테이블에 있는 item_category 와 categories 테이블에 있는 category_name 이 약간 겹치는 느낌? 
+# 그래서 참조키로 설정
+
+INSERT INTO itemcart
+(
+    user_id,
+    item_id,
+    cart_in_amount
+)
+VALUES(101,1, 50);
+# 상품 아이디가 숫자여서 판별하기가 어렵네..
