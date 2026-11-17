@@ -5,7 +5,7 @@ CREATE TABLE items
     item_price      INT          NOT NULL,  
     item_stock      INT          NOT NULL,
     item_category   VARCHAR(30)  NOT NULL  REFERENCES categories(category_name),
-    item_ex         VARCHAR(100)
+    item_ex         TEXT
 );
 # 가격이 0이하면?
 # 수량이 0이하면?
@@ -14,7 +14,7 @@ CREATE TABLE categories
 (
     category_id     SERIAL          PRIMARY KEY,
     category_name   VARCHAR(30)     NOT NULL    UNIQUE,
-    category_ex     VARCHAR(100)
+    category_ex     TEXT
 );
 
 CREATE TABLE itemcart
