@@ -8,7 +8,7 @@ SELECT member_id    AS 회원번호,
 FROM members
 WHERE birth_year BETWEEN 1970 AND 1989 
 AND email IS NULL
-ORDER BY birth_year, member_id,members;
+ORDER BY birth_year, member_id;
 
 -- 2번
 
